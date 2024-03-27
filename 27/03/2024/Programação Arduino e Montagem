@@ -1,0 +1,21 @@
+int led[2];
+
+void setup()
+{
+  led[0] = 13;
+  led[1] = 12;
+  
+  pinMode(led[0], OUTPUT);
+  pinMode(led[1], OUTPUT);
+  
+}
+
+void loop()
+{
+  digitalWrite(led[0], HIGH);
+  digitalWrite(led[1], HIGH);
+  delay(1000); 
+  digitalWrite(led[0], LOW);
+  digitalWrite(led[1], LOW);
+  delay(1000); 
+}
